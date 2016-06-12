@@ -1,0 +1,91 @@
+@import "nib"
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+  .portfolio-gallery img {
+    height 320px
+  }
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .logo h1 {
+    font-size 2.5rem
+  }
+  .about .myself {
+    display block
+    width 30%
+    float none
+    margin auto
+    margin-bottom 30px
+  }
+  .skills-list {
+    border 0
+  }
+  .skills ol {
+    margin-bottom 20px
+    text-align center
+    li {
+      float none
+    }
+  }
+  .skills .icons {
+    text-align: center;
+    img {
+      width 45px
+    }
+  }
+  .portfolio-gallery img {
+    height 240px
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    transition-property: none !important
+    transform: none !important
+    animation: none !important
+  }
+  /*other rules*/
+  header .top-menu-wrap {
+    top 25px
+    right 25px
+  }
+  .logo {
+    h1 {
+      font-size 1.4rem
+    }
+    p {
+      font-size .6rem
+    }
+  }
+  .education ul li {
+    width 100%
+    min-width 100% !important
+    float none !important
+    text-align center !important
+  }
+  .portfolio-gallery img {
+    height 331px
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .logo {
+    h1 {
+      font-size 1rem
+    }
+    p {
+      font-size .8rem
+      letter-spacing 8px
+    } 
+  }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  /**/
