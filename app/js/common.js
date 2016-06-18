@@ -64,7 +64,7 @@
       enabled: true,
       navigateByImgClick: true,
       preload: [0,1]
-    },
+    }
   });
   
   //certificates
