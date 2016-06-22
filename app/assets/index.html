@@ -75,8 +75,59 @@
       <div class="loader-inner"></div>
     </div>
    
-    <header data-parallax="scroll" data-image-src="/img/bg.jpg">
-     
+    <!--<header data-parallax="scroll" data-image-src="/img/bg.jpg">-->
+    <header>
+    
+      <canvas></canvas>
+      
+      <script id="vertex-shader" type="x-shader/x-vertex">
+      attribute vec2 a_position;
+
+      void main(void) {
+        gl_Position = vec4(a_position, 0.0, 1.0);
+      }
+      </script>
+      
+      <script id="fragment-shader" type="x-shader/x-fragment">
+
+      precision mediump float;
+
+      uniform sampler2D u_image;
+      uniform vec2 u_translate;
+      uniform float u_scale;
+      uniform vec2 u_rotate;
+
+      const float c_pi = 3.14159265358979323846264;
+      const float c_halfPi = c_pi * 0.5;
+      const float c_twoPi = c_pi * 2.0;
+
+      float cosphi0 = cos(u_rotate.y);
+      float sinphi0 = sin(u_rotate.y);
+
+      void main(void) {
+        float x = (gl_FragCoord.x - u_translate.x) / u_scale;
+        float y = (u_translate.y - gl_FragCoord.y) / u_scale;
+
+        // inverse stereographic projection
+        float rho = sqrt(x * x + y * y);
+        float c = 2.0 * atan(rho);
+        float sinc = sin(c);
+        float cosc = cos(c);
+        float lambda = atan(x * sinc, rho * cosc);
+        float phi = asin(y * sinc / rho);
+
+        // inverse rotation
+        float cosphi = cos(phi);
+        float x1 = cos(lambda) * cosphi;
+        float y1 = sin(lambda) * cosphi;
+        float z1 = sin(phi);
+        lambda = atan(y1, x1 * cosphi0 + z1 * sinphi0) + u_rotate.x;
+        phi = asin(z1 * cosphi0 - x1 * sinphi0);
+
+        gl_FragColor = texture2D(u_image, vec2((lambda + c_pi) / c_twoPi, (phi + c_halfPi) / c_pi));
+      }
+      </script>
+
       <div class="top-menu-wrap">
         <a id="toggle-mnu" href="#" class="toggle-mnu"><span></span></a>
       </div>
@@ -112,7 +163,7 @@
           <div class="row anim1">
             <div class="col-md-12">
               <h2>Обо мне</h2>
-              <p class="desc">Let me introduce myself</p>
+              <p class="desc">Давайте знакомиться</p>
               <hr>
             </div>
           </div>
@@ -126,7 +177,7 @@
                 <p>Уже около года увлекаюсь веб разработкой, много учусь и практикуюсь.</p>
                 <p>English level: Intermediate</p>
                 <p>Не женат</p>
-                <p>Готов к переезду</p>
+                <p>Живу в Сочи. Готов к переезду</p>
               </div>
             </div>
           </div>
@@ -260,7 +311,7 @@
                 <a href="/img/portfolio/big/landing.jpg" title="http://test-landing.polyfill.ru">
                   <img src="/img/portfolio/small/landing.jpg" alt="">
                 </a>
-                <a href="/img/portfolio/big/hrustal.jpg" title="http://gor-hrustal.ru">
+                <a href="/img/portfolio/big/hrustal.jpg" title="http://hrustal.polyfill.ru">
                   <img src="/img/portfolio/small/hrustal.jpg" alt="">
                 </a>
                 <a href="/img/portfolio/big/posokhov.jpg" title="http://v-posokhov.ru">
@@ -333,6 +384,12 @@
                 </a>
                 <a class="mix category-1" href="/img/cert/big/12.jpg" title="">
                   <img src="/img/cert/small/12.jpg" alt="">
+                </a>
+                <a class="mix category-2" href="/img/cert/big/13.jpg" title="">
+                  <img src="/img/cert/small/13.jpg" alt="">
+                </a>
+                <a class="mix category-2" href="/img/cert/big/14.jpg" title="">
+                  <img src="/img/cert/small/14.jpg" alt="">
                 </a>
               </div>
             </div>
