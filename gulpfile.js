@@ -71,7 +71,7 @@ gulp.task('libs', function () {
     'app/assets/libs/es5-shim/es5-sham.min.js',*/
     'app/assets/libs/jquery/dist/jquery.min.js',
     //'app/assets/libs/parallax/parallax.min.js',
-    //'app/assets/libs/modernizr/modernizr.min.js',
+    'app/assets/libs/modernizr/modernizr.min.js',
     //'app/assets/libs/owl.carousel/owl.carousel.min.js',
     /*'app/assets/libs/jQuery.equalHeights/jquery.equalheights.min.js',*/
     //'app/assets/libs/lightgallery/dist/js/lightgallery.min.js',
