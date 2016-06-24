@@ -12,7 +12,7 @@
   } else {
     addHeaderEffect();
   }
-
+  
   //top menu
   $("#toggle-mnu").click(function() {
     $(this).toggleClass("on");
@@ -62,8 +62,8 @@
   
   $('.certificates-gallery').mixItUp();
   
-  $('.portfolio-gallery').magnificPopup({
-    delegate: 'a',
+  $('.portfolio').magnificPopup({
+    delegate: '.link-img',
     type: 'image',
     tLoading: 'Loading image #%curr%...',
     removalDelay: 700,
