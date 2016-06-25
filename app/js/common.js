@@ -74,6 +74,11 @@
     }
   });
   
+  //подгрузить больше работ в портфолио
+  $('.get-portfolio-more').click(function() {
+    $('.portfolio-more').load('portfolio.html');
+  });
+  
   //certificates
   addAnimation('.certificates','.anim9','zoomIn','50%');
   
