@@ -67,8 +67,8 @@ gulp.task('js', function () {
 gulp.task('libs', function () {
   return gulp.src([
     //все js библиотеки подключать сюда
-    /*'app/assets/libs/es5-shim/es5-shim.min.js',
-    'app/assets/libs/es5-shim/es5-sham.min.js',*/
+    'app/assets/libs/es5-shim/es5-shim.min.js',
+    'app/assets/libs/es5-shim/es5-sham.min.js',
     'app/assets/libs/jquery/dist/jquery.min.js',
     //'app/assets/libs/parallax/parallax.min.js',
     'app/assets/libs/modernizr/modernizr.min.js',

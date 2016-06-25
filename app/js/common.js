@@ -5,7 +5,6 @@
   $(".loader-inner").fadeOut(); 
   $(".loader").delay(400).fadeOut("slow"); 
   
-  
   //эффект в header. Если webgl не поддерживается устройством или это мобильное устройство, тогда загрузить просто статичный фон
   if (!Modernizr.webgl || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     $("header").addClass('top-bg');
