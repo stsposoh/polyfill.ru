@@ -59,7 +59,7 @@ gulp.task('js', function () {
     .pipe(babel({
       presets: ['es2015']
     }))
-    .pipe(uglify())   //сжатие common.js
+    //.pipe(uglify())   //сжатие common.js
     .pipe(gulp.dest('dist/js'));
 });
 
