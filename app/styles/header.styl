@@ -39,11 +39,15 @@ a
     color $font-color
     text-decoration none
   &:visited 
+    outline-color: transparent;
     color $font-color
+  &:focus
+    outline-color: transparent;
   &:hover 
     color $bg-color
     text-decoration none
   &:active 
+    outline-color: transparent;
     color $theme-color
     
 .active
@@ -76,14 +80,12 @@ a
   position: absolute
 
 //header menu
-.top-bg
-  background-image url(/img/milky-way2.jpg)
-  background-size cover
-  background-repeat no-repeat
-
 header
   height 100vh
   background-color $font-black
+  background-image url(/img/milky-way2.jpg)
+  background-size cover
+  background-repeat no-repeat
   .top-menu-wrap
     position fixed
     top 50px
