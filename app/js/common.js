@@ -42,8 +42,10 @@
 
   //about
   addAnimation('.about', '.anim1', 'zoomIn', '50%');
-  addAnimation('.about', '.myself', 'flipInY', '20%');
-  addAnimation('.about', '.anim2', 'fadeInUp', '30%');
+  addAnimation('.about', '.myself', 'flipInY', '30%');
+  addAnimation('.about', '.anim2', 'fadeInUp', '10%');
+  addAnimation('.myself', '.anim2-2', 'fadeInUp', '20%');
+  addAnimation('.myself', '.anim2-3', 'fadeInUp', '5%');
 
   //для увеличения картинки
   $('.image-popup-vertical-fit').magnificPopup({
