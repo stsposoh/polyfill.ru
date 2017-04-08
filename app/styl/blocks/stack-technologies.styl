@@ -1,0 +1,61 @@
+.stack-technologies
+
+    &__list
+        normalize_list()
+        clear_display_inlines()
+
+        &-item
+            height: 80px;
+            width 80px
+            margin 8px
+            border: 1px solid color_icon_light_grey
+            border-radius: 50%;
+            transform-style: preserve-3d;
+
+            &:hover
+                .stack-technologies__list-item-back
+                    transform: rotate3d(0,1,0, 180deg);
+
+                .stack-technologies__list-item-front
+                    transform: rotate3d(0,1,0, 0deg);
+
+            &-back
+            &-front
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                transition: all .8s;
+                backface-visibility: hidden
+
+            &-back
+                padding 15px
+
+            &-front
+                position relative
+                transform: rotate3d(0,1,0, 180deg);
+
+                &-text
+                    margin: 0;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    font-size: 14px;
+                    line-height: 15px;
+
+            img
+                max-height 100%
+                max-width 100%
+                vertical-align: middle;
+                height: 100%;
+
+
+
+
+
+
+
+
+
+
+

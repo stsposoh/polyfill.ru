@@ -1,0 +1,36 @@
+.nav
+    display none
+    position fixed
+    z-index 998
+    top 0
+    left 0
+    width 100%
+    height 100%
+    padding-top 14%
+    text-align center
+    background-color bg_grey_opacity
+
+    &__list
+        animation-delay .5s
+        animation-duration 1s
+        normalize_list()
+
+        &-item
+            a
+                display block
+                padding 20px 0
+                text-align center
+                font-size 12px
+                letter-spacing 4px
+                color white
+                text-transform uppercase
+                transition all 1s ease
+                text-decoration none
+                &:hover
+                    color accent-color
+                    text-decoration none
+                    background-color rgba(31, 27, 23, 0.73)
+                    transition all 1s ease
+
+    &--visible
+        display block

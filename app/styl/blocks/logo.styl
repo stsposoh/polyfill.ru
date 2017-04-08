@@ -1,0 +1,45 @@
+.logo
+    width 90%
+    max-width 780px
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color white
+    font-family 'RalewayBold',sans-serif
+    transition all 1s ease
+
+    &__title
+        width 100%
+        margin-bottom 8px
+        padding 4px 17px
+        font-size 30px
+        line-height 37px
+        border 5px solid white
+        letter-spacing 7px
+        animation-delay 1s
+        animation-duration 3s
+        display inline-block
+        text-transform uppercase
+
+        @media mq_tablet
+            padding 12px 35px
+
+            @media mq_desktop
+                padding 23px 35px
+                font-size 50px
+
+    &__desc
+        color #d3d2d2
+        letter-spacing 8px
+        font-size 20px
+        animation-delay 1s
+        animation-duration 3s
+
+        @media mq_tablet
+            letter-spacing 14px
+            font-size 22px
+
+            @media mq_desktop
+                font-size 27px

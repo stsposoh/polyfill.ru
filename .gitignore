@@ -1,2 +1,6 @@
 /dist/
 /node_modules/
+.idea/
+/app/assets/fonts/
+/app/assets/img/
+/app/assets/libs/

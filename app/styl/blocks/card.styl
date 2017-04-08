@@ -1,0 +1,78 @@
+.card
+    padding 55px 15px
+    background-color white
+    text-align center
+
+    &__content
+        max-width 940px
+        margin auto
+
+    &__header
+
+        &-title
+        &-desc
+            display block
+            margin 0 0 15px
+            text-align center
+            text-transform uppercase
+            font-family 'RalewayBold'
+            color color_text_dark
+
+        &-title
+            font-size 21px
+            letter-spacing 1px
+
+        &-desc
+            font-size 14px
+            letter-spacing 4px
+
+        &-divider
+            width 140px
+            height 1px
+            margin-top 18px
+            margin-bottom 40px
+            background-color accent-color
+            border 0
+
+    &__avatar
+        display inline-block
+
+        &-img
+            margin-bottom 25px
+            width 50%
+            max-width 225px
+            min-width 200px
+            border-radius 50%
+            box-shadow 27px 38px 52px -23px color_text_dark
+
+    &__text
+
+        h3
+            color color_text_dark
+            font-size 14px
+            letter-spacing 4px
+            text-transform uppercase
+            font-family 'RalewayBold'
+
+        a
+            color accent-color
+
+            @media mq_desktop
+
+                &:hover
+                    text-decoration underline
+
+        p
+            margin-bottom 10px
+            letter-spacing 1px
+
+
+    &--grey
+        background-color bg_grey
+
+    &--black
+        background-color bg_black
+
+        .card__header-title
+        .card__header-desc
+            color white

@@ -1,26 +1,29 @@
 'use strict';
 
-const gulp         = require('gulp');
-const watch        = require('gulp-watch');
-const stylus       = require('gulp-stylus');
-const nib          = require('nib');  //библиотека миксинов для stylus
-const debug        = require('gulp-debug');  //для отлова ошибок
-const plumber      = require('gulp-plumber');
-const rename       = require('gulp-rename');
-const browserSync  = require('browser-sync').create();
-const sourcemaps   = require('gulp-sourcemaps');
-const newer        = require('gulp-newer');
-const notify       = require('gulp-notify');
-const cssnano      = require('gulp-cssnano');
-const concat       = require('gulp-concat');
-const uglify       = require('gulp-uglify');
-const cache        = require('gulp-cache'); // Подключаем библиотеку кеширования
-const babel        = require('gulp-babel');
+const gulp              = require('gulp');
+const watch             = require('gulp-watch');
+const stylus            = require('gulp-stylus');
+//const webpackStream     = require('webpack-stream');
+//const webpack           = webpackStream.webpack;
+//const named             = require('vinyl-named');
+const nib               = require('nib');
+const debug             = require('gulp-debug');
+const plumber           = require('gulp-plumber');
+const rename            = require('gulp-rename');
+const browserSync       = require('browser-sync').create();
+const sourcemaps        = require('gulp-sourcemaps');
+const newer             = require('gulp-newer');
+const notify            = require('gulp-notify');
+const cssnano           = require('gulp-cssnano');
+const concat            = require('gulp-concat');
+const uglify            = require('gulp-uglify');
+const cache             = require('gulp-cache');
+const babel             = require('gulp-babel');
 
 
 
-gulp.task('styles', function () {
-  return gulp.src(['app/styles/main.styl', 'app/styles/header.styl', 'app/styles/fonts.styl']) 
+gulp.task('styl', function () {
+  return gulp.src('app/styl/common.styl')
     .pipe(plumber({
       errorHandler: notify.onError(err => ({
         title: 'Styles',
@@ -34,7 +37,7 @@ gulp.task('styles', function () {
       'include css': true
     }))
     //.pipe(debug({title: 'stylus'}))
-    .pipe(cssnano())  //если нужно сжать css
+    //.pipe(cssnano())  //если нужно сжать css
     .pipe(rename({suffix: '.min', prefix : ''}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'));
@@ -65,43 +68,46 @@ gulp.task('js', function () {
 
 
 gulp.task('libs', function () {
-  return gulp.src([
-    //все js библиотеки подключать сюда
-    'app/assets/libs/es5-shim/es5-shim.min.js',
-    'app/assets/libs/es5-shim/es5-sham.min.js',
-    'app/assets/libs/jquery/dist/jquery.min.js',
-    //'app/assets/libs/parallax/parallax.min.js',
-    'app/assets/libs/modernizr/modernizr.min.js',
-    //'app/assets/libs/owl.carousel/owl.carousel.min.js',
-    /*'app/assets/libs/jQuery.equalHeights/jquery.equalheights.min.js',*/
-    //'app/assets/libs/lightgallery/dist/js/lightgallery.min.js',
-    'app/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-    //'app/assets/libs/animateNumber/jquery.animateNumber.min.js',
-    'app/assets/libs/waypoints/lib/jquery.waypoints.min.js',
-    'app/assets/libs/mixitup/jquery.mixitup.min.js',
-    'app/assets/libs/page-scroll-to-id-1.5.4/jquery.malihu.PageScroll2id.min.js'
-    //'app/assets/libs/bxslider/jquery.bxSlider.min.js',
-    //'app/assets/libs/uglipop/uglipop.min.js',
-    //'app/assets/libs/flipclock/compiled/flipclock.min.js'
-  ])
-  .pipe(plumber({
-    errorHandler: notify.onError(err => ({
-      title: 'Libs',
-      message: err.message
+    return gulp.src([
+        //все js библиотеки подключать сюда
+        'app/assets/libs/jquery/dist/jquery.min.js',
+        'app/assets/libs/vue/dist/vue.js',
+        'app/assets/libs/parallax.js/parallax.min.js'
+        // 'app/assets/libs/es5-shim/es5-shim.min.js',
+        // 'app/assets/libs/es5-shim/es5-sham.min.js'
+
+        //'app/assets/libs/parallax/parallax.min.js',
+        //'app/assets/libs/modernizr/modernizr.min.js',
+        //'app/assets/libs/owl.carousel/owl.carousel.min.js',
+        /*'app/assets/libs/jQuery.equalHeights/jquery.equalheights.min.js',*/
+        //'app/assets/libs/lightgallery/dist/js/lightgallery.min.js',
+        //'app/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+        //'app/assets/libs/animateNumber/jquery.animateNumber.min.js',
+        //'app/assets/libs/waypoints/lib/jquery.waypoints.min.js',
+        //'app/assets/libs/mixitup/jquery.mixitup.min.js',
+        //'app/assets/libs/page-scroll-to-id-1.5.4/jquery.malihu.PageScroll2id.min.js'
+        //'app/assets/libs/bxslider/jquery.bxSlider.min.js',
+        //'app/assets/libs/uglipop/uglipop.min.js',
+        //'app/assets/libs/flipclock/compiled/flipclock.min.js'
+    ])
+    .pipe(plumber({
+        errorHandler: notify.onError(err => ({
+            title: 'Libs',
+            message: err.message
+        }))
     }))
-  }))
-  .pipe(concat('libs.js'))
-  .pipe(uglify())
-  .pipe(rename({suffix: '.min', prefix : ''}))
-  .pipe(gulp.dest('dist/js'));
+    .pipe(concat('libs.js'))
+    .pipe(uglify())
+    .pipe(rename({suffix: '.min', prefix : ''}))
+    .pipe(gulp.dest('dist/js'));
 });
 
 
-gulp.task('build', gulp.parallel('styles', 'assets', 'js', 'libs'));
+gulp.task('build', gulp.parallel('styl', 'assets', 'js', 'libs'));
 
 
 gulp.task('watch', function() {
-  gulp.watch('app/styles/**/*', gulp.series('styles'));
+  gulp.watch('app/styl/**/*', gulp.series('styl'));
   gulp.watch('app/js/**/*.js', gulp.series('js'));
   gulp.watch('app/assets/**/*.*', gulp.series('assets'));
 });
