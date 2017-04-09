@@ -71,8 +71,9 @@ gulp.task('libs', function () {
     return gulp.src([
         //все js библиотеки подключать сюда
         'app/assets/libs/jquery/dist/jquery.min.js',
-        'app/assets/libs/vue/dist/vue.js',
-        'app/assets/libs/parallax.js/parallax.min.js'
+        //'app/assets/libs/vue/dist/vue.js',
+        'app/assets/libs/parallax.js/parallax.min.js',
+        'app/assets/libs/mixitup/dist/mixitup.min.js'
         // 'app/assets/libs/es5-shim/es5-shim.min.js',
         // 'app/assets/libs/es5-shim/es5-sham.min.js'
 
@@ -84,7 +85,6 @@ gulp.task('libs', function () {
         //'app/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
         //'app/assets/libs/animateNumber/jquery.animateNumber.min.js',
         //'app/assets/libs/waypoints/lib/jquery.waypoints.min.js',
-        //'app/assets/libs/mixitup/jquery.mixitup.min.js',
         //'app/assets/libs/page-scroll-to-id-1.5.4/jquery.malihu.PageScroll2id.min.js'
         //'app/assets/libs/bxslider/jquery.bxSlider.min.js',
         //'app/assets/libs/uglipop/uglipop.min.js',

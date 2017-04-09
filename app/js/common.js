@@ -1,46 +1,3 @@
-//import Vue from 'vue';
-/*
-
-import User from 'app/js/components/rrr';
-
-
-
-let ccc = new User("Вася");
-console.log(ccc);
-
-
-new Vue({
-    el: '#root',
-    data: {
-      mess: 'hello'
-    },
-    directives: {
-        //tooltip,
-        //sticky,
-        //imageZoom
-    },
-    components: {
-        //...components,
-        //Comments,
-        //Carousel
-    },
-});
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ;(function () {
     "use strict";
 
@@ -105,11 +62,10 @@ new Vue({
         if ([q] == 2) z = '';
 
         document.querySelector('.js-experience-timer').children[q].innerHTML = n + ' ' + t + z;
-    };
+    }
 
 
-
-
+    //Zoom image in portfolio
     for(let i = 0; i < portfolioItems.length; i++) {
         portfolioItems[i].addEventListener('click', getImgAdress);
     }
@@ -137,7 +93,28 @@ new Vue({
     document.querySelector('.js-portfolio-zoomed-hider').addEventListener('click', function () {
         document.body.style.overflow = 'auto';
         portfolioZoomed.style.display = '';
-    })
+    });
+
+
+    //Sertificates
+    mixitup('.js-portfolio', {
+        load: {
+            sort: 'order:asc'
+        },
+        animation: {
+            effects: 'fade rotateZ(-180deg)',
+            duration: 700
+        },
+        classNames: {
+            block: '',
+            elementFilter: 'certificates__list-item',
+        },
+        selectors: {
+            target: '.certificates__images-item'
+        }
+    });
+
+
 
 /*
 
