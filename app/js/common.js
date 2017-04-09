@@ -44,6 +44,9 @@ new Vue({
 ;(function () {
     "use strict";
 
+    let portfolioItems = document.querySelectorAll('.js-portfolio-zoom');
+    let portfolioZoomed = document.querySelector('.js-portfolio-zoomed');
+
     //menu
     document.querySelector('.hamburger').addEventListener('click', function () {
         this.classList.toggle('hamburger--is-active');
@@ -104,6 +107,37 @@ new Vue({
         document.querySelector('.js-experience-timer').children[q].innerHTML = n + ' ' + t + z;
     };
 
+
+
+
+    for(let i = 0; i < portfolioItems.length; i++) {
+        portfolioItems[i].addEventListener('click', getImgAdress);
+    }
+
+    function getImgAdress(e) {
+        e.preventDefault();
+
+        let imgAdress = this.getAttribute('href');
+
+        setImgAdress(imgAdress);
+        showZoomedPortfolio();
+    }
+
+    function setImgAdress(imgAdress) {
+        let portfolioZoomedImage = document.querySelector('.js-portfolio-zoomed-image');
+
+        portfolioZoomedImage.setAttribute('src', imgAdress);
+    }
+
+    function showZoomedPortfolio() {
+        document.body.style.overflow = 'hidden';
+        portfolioZoomed.style.display = 'block';
+    }
+
+    document.querySelector('.js-portfolio-zoomed-hider').addEventListener('click', function () {
+        document.body.style.overflow = 'auto';
+        portfolioZoomed.style.display = '';
+    })
 
 /*
 
