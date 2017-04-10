@@ -8,37 +8,10 @@
         width: 290px;
 
         @media mq_tablet
-            margin 0 5px
+            margin 0 10px
 
-    &__work
-        display none
-        position: fixed;
-        width: 100%;
-        top: 0;
-        bottom: 0;
-        z-index 999
-        padding-bottom: 69px;
-
-        &-bg
-            position: absolute;
-            width: 100%;
-            top: 0;
-            bottom: 0;
-            background-color bg_grey_opacity
-            z-index 1000
-            cursor pointer
-
-        &-cont
-            position: relative;
-            z-index: 1001;
-            width: 65%;
-            margin: auto;
-            top: 50px;
-            height: 100%;
-            overflow-x: hidden;
-
-        &-image
-            //
+            @media mq_desktop
+                margin 0 15px
 
 
 .slab
@@ -89,6 +62,7 @@
         transition all 0.5s
         transform rotateX(80deg)
         transform-origin bottom
+        outline: 1px solid color_icon_light_grey
 
         @media mq_desktop
             transform rotateX(0deg)

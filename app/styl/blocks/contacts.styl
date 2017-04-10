@@ -1,0 +1,86 @@
+.contacts
+    clearfix()
+
+    &__right
+    &__left
+        width 100%
+
+        @media mq_desktop
+            width 50%
+
+    &__left
+        float left
+        text-align left
+
+        a
+            text-decoration none
+            color inherit
+
+            @media mq_desktop
+                &:hover
+                    color bg_black
+
+        p
+            position relative
+            padding-left 60px
+            margin-bottom 37px
+
+            &:before
+                content ''
+                position absolute
+                top -12px
+                left 0
+                width 40px
+                height 40px
+                background-repeat no-repeat
+                background-size cover
+
+            &:nth-child(1):before
+                background-image url(/img/icons-cont/map.svg)
+            &:nth-child(2):before
+                background-image url(/img/icons-cont/phone.svg)
+            &:nth-child(3):before
+                background-image url(/img/icons-cont/gmail_mail.svg)
+            &:nth-child(4):before
+                background-image url(/img/icons-cont/skype.svg)
+            &:nth-child(5):before
+                background-image url(/img/icons-cont/vkontakte.svg)
+            &:nth-child(6):before
+                background-image url(/img/icons-cont/github.svg)
+            &:nth-child(7):before
+                background-image url(/img/icons-cont/linkedin.svg)
+
+    &__right
+        float right
+
+        input
+            min-height 35px
+
+        textarea
+            min-height 100px
+
+        input
+        textarea
+        .btn-send
+            display block
+            width 100%
+            margin-bottom 5px
+            border 1px solid #ccc
+            line-height 40px
+            text-indent 12px
+            font-size 12px
+            letter-spacing 2px
+            outline-color bg_black
+
+    &__btn-send
+        background-color bg_black
+        color white
+        text-align center
+        transition all 1s ease
+        cursor pointer
+
+        @media mq_desktop
+
+            &:hover
+                color white !important
+                background-color #5a5e60

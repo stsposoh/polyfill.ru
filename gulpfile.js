@@ -3,9 +3,6 @@
 const gulp              = require('gulp');
 const watch             = require('gulp-watch');
 const stylus            = require('gulp-stylus');
-//const webpackStream     = require('webpack-stream');
-//const webpack           = webpackStream.webpack;
-//const named             = require('vinyl-named');
 const nib               = require('nib');
 const debug             = require('gulp-debug');
 const plumber           = require('gulp-plumber');
@@ -31,12 +28,12 @@ gulp.task('styl', function () {
       }))
     }))
     .pipe(sourcemaps.init())
-    //.pipe(debug({title: 'src'}))
+    .pipe(debug({title: 'src'}))
     .pipe(stylus({
       use:[nib()],
       'include css': true
     }))
-    //.pipe(debug({title: 'stylus'}))
+    .pipe(debug({title: 'stylus'}))
     //.pipe(cssnano())  //если нужно сжать css
     .pipe(rename({suffix: '.min', prefix : ''}))
     .pipe(sourcemaps.write('.'))
@@ -62,7 +59,7 @@ gulp.task('js', function () {
     .pipe(babel({
       presets: ['es2015']
     }))
-    .pipe(uglify())   //сжатие common.js
+    //.pipe(uglify())   //сжатие common.js
     .pipe(gulp.dest('dist/js'));
 });
 
@@ -71,24 +68,8 @@ gulp.task('libs', function () {
     return gulp.src([
         //все js библиотеки подключать сюда
         'app/assets/libs/jquery/dist/jquery.min.js',
-        //'app/assets/libs/vue/dist/vue.js',
         'app/assets/libs/parallax.js/parallax.min.js',
         'app/assets/libs/mixitup/dist/mixitup.min.js'
-        // 'app/assets/libs/es5-shim/es5-shim.min.js',
-        // 'app/assets/libs/es5-shim/es5-sham.min.js'
-
-        //'app/assets/libs/parallax/parallax.min.js',
-        //'app/assets/libs/modernizr/modernizr.min.js',
-        //'app/assets/libs/owl.carousel/owl.carousel.min.js',
-        /*'app/assets/libs/jQuery.equalHeights/jquery.equalheights.min.js',*/
-        //'app/assets/libs/lightgallery/dist/js/lightgallery.min.js',
-        //'app/assets/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
-        //'app/assets/libs/animateNumber/jquery.animateNumber.min.js',
-        //'app/assets/libs/waypoints/lib/jquery.waypoints.min.js',
-        //'app/assets/libs/page-scroll-to-id-1.5.4/jquery.malihu.PageScroll2id.min.js'
-        //'app/assets/libs/bxslider/jquery.bxSlider.min.js',
-        //'app/assets/libs/uglipop/uglipop.min.js',
-        //'app/assets/libs/flipclock/compiled/flipclock.min.js'
     ])
     .pipe(plumber({
         errorHandler: notify.onError(err => ({

@@ -1,18 +1,58 @@
 ;(function () {
     "use strict";
 
-    let portfolioItems = document.querySelectorAll('.js-portfolio-zoom');
-    let portfolioZoomed = document.querySelector('.js-portfolio-zoomed');
+    let imageZoomItems = document.querySelectorAll('.js-image-zoom');
+    let imageZoomed = document.querySelector('.js-image-zoomed');
+    let smoothLinks = document.querySelectorAll('.js-smooth-to');
+    let hamburger = document.querySelector('.hamburger');
+    let nav = document.querySelector('.nav');
+
 
     //menu
-    document.querySelector('.hamburger').addEventListener('click', function () {
+    hamburger.addEventListener('click', function () {
         this.classList.toggle('hamburger--is-active');
 
-        document.querySelector('.nav').classList.toggle('nav--visible');
+        nav.classList.toggle('nav--visible');
     });
+
 
     //header parralax
     $('.header').parallax({imageSrc: '/img/n71.jpg'});
+
+
+    //smooth scroll to link ankhor
+    const smoothSpeed = .3;
+
+    for (let i = 0; i < smoothLinks.length; i++) {
+        smoothLinks[i].addEventListener('click', function(e) {
+            e.preventDefault();
+
+            hamburger.classList.remove('hamburger--is-active');
+            nav.classList.remove('nav--visible');
+
+            let w = window.pageYOffset;
+            let hash = this.href.replace(/[^#]*(.*)/, '$1');
+            let t = document.querySelector(hash).getBoundingClientRect().top;
+            let start = null;
+
+            requestAnimationFrame(step);
+
+            function step(time) {
+                if (start === null) start = time;
+
+                let progress = time - start;
+                let r = (t < 0 ? Math.max(w - progress / smoothSpeed, w + t) : Math.min(w + progress / smoothSpeed, w + t));
+
+                window.scrollTo(0, r);
+
+                if (r != w + t) {
+                    requestAnimationFrame(step)
+                } else {
+                    location.hash = hash
+                }
+            }
+        }, false);
+    }
 
 
     //experience timer
@@ -65,9 +105,9 @@
     }
 
 
-    //Zoom image in portfolio
-    for(let i = 0; i < portfolioItems.length; i++) {
-        portfolioItems[i].addEventListener('click', getImgAdress);
+    //Zoom image
+    for(let i = 0; i < imageZoomItems.length; i++) {
+        imageZoomItems[i].addEventListener('click', getImgAdress);
     }
 
     function getImgAdress(e) {
@@ -76,23 +116,23 @@
         let imgAdress = this.getAttribute('href');
 
         setImgAdress(imgAdress);
-        showZoomedPortfolio();
+        showZoomedimage();
     }
 
     function setImgAdress(imgAdress) {
-        let portfolioZoomedImage = document.querySelector('.js-portfolio-zoomed-image');
+        let zoomedImage = document.querySelector('.js-image-zoomed-image');
 
-        portfolioZoomedImage.setAttribute('src', imgAdress);
+        zoomedImage.setAttribute('src', imgAdress);
     }
 
-    function showZoomedPortfolio() {
+    function showZoomedimage() {
         document.body.style.overflow = 'hidden';
-        portfolioZoomed.style.display = 'block';
+        imageZoomed.style.display = 'block';
     }
 
-    document.querySelector('.js-portfolio-zoomed-hider').addEventListener('click', function () {
+    document.querySelector('.js-image-zoomed-hider').addEventListener('click', function () {
         document.body.style.overflow = 'auto';
-        portfolioZoomed.style.display = '';
+        imageZoomed.style.display = '';
     });
 
 
@@ -113,248 +153,5 @@
             target: '.certificates__images-item'
         }
     });
-
-
-
-/*
-
-;(function () {
-  'use-strict';*/
-
-  //jQuery Page Preload
-
-  //$(".loader-inner").fadeOut();
-  //$(".loader").delay(400).fadeOut("slow");
-
-  //эффект в header. Если webgl не поддерживается устройством или это мобильное устройство, тогда загрузить просто статичный фон
- /* if (!Modernizr.webgl || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    $("header").addClass('top-bg');
-  } else {
-    addHeaderEffect();
-  }*/
-/*
-
-  //top menu
-  $("#toggle-mnu").click(function () {
-    $(this).toggleClass("on");
-    $(".logo").toggleClass("off");
-    $(".main-mnu").fadeToggle();
-    $(".main-mnu ul").addClass("animated fadeInUp");
-    return false;
-  });
-
-  $(".main-mnu ul a").mPageScroll2id();
-
-  $(".main-mnu ul a").click(function () {
-    $("#toggle-mnu").click();
-  });
-
-  //logo
-  $("#logo-text").addClass('animated fadeIn');
-  $("#logo-desc").addClass('animated slideInUp');
-
-  $(".arrow-down").on('click', function () {
-    $('html, body').animate({
-      scrollTop: $('header').height()
-    }, "slow");
-  });
-
-  //about
-  addAnimation('.about', '.anim1', 'zoomIn', '50%');
-  addAnimation('.about', '.myself', 'flipInY', '30%');
-  addAnimation('.about', '.anim2', 'fadeInUp', '10%');
-  addAnimation('.myself', '.anim2-2', 'fadeInUp', '20%');
-  addAnimation('.myself', '.anim2-3', 'fadeInUp', '5%');
-
-  //для увеличения картинки
-  $('.image-popup-vertical-fit').magnificPopup({
-    type: 'image',
-    closeOnContentClick: true,
-    mainClass: 'mfp-img-mobile',
-    image: {
-      verticalFit: true
-    }
-  });
-
-
-
-  //skills
-  addAnimation('.skills', '.anim3', 'zoomIn', '50%');
-  addItemsAnimation('.skills', 17, 'ol>li', 'fadeInLeft', '30%');
-  addItemsAnimation('.skills', 19, '.icons>img', 'fadeInRight', '30%');
-
-  //education
-  addAnimation('.education', '.anim4', 'zoomIn', '50%');
-  addAnimation('.education', '.anim10', 'zoomIn', '40%');
-  addItemsAnimation('.education', 5, '.anim5 p', 'fadeInUp', '30%');
-  addItemsAnimation('.education', 16, '.anim7>li:nth-child(odd)', 'fadeInLeft', '30%');
-  addItemsAnimation('.education', 16, '.anim7>li:nth-child(even)', 'fadeInRight', '30%');
-
-  //portfolio
-  addAnimation('.portfolio', '.anim8', 'zoomIn', '50%');
-
-  //certificates
-  $('.certificates-gallery').mixItUp();
-
-  addAnimation('.certificates', '.anim9', 'zoomIn', '50%');
-
-  $('.certificates-gallery').magnificPopup({
-    delegate: 'a',
-    type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    removalDelay: 700,
-    mainClass: 'mfp-fade',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    }
-  });
-
-  //footer
-  $(".on-top").on('click', function () {
-    $('html, body').animate({
-      scrollTop: 0
-    }, "slow");
-  });
-
-  //FUNCTIONS
-  function addHeaderEffect() {
-
-    var canvas = document.querySelector("canvas");
-
-    // Create the WebGL context, with fallback for experimental support.
-    var context = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
-
-    // Compile the vertex shader.
-    var vertexShader = context.createShader(context.VERTEX_SHADER);
-    context.shaderSource(vertexShader, document.querySelector("#vertex-shader").textContent);
-    context.compileShader(vertexShader);
-    if (!context.getShaderParameter(vertexShader, context.COMPILE_STATUS)) throw new Error(context.getShaderInfoLog(vertexShader));
-
-    // Compile the fragment shader.
-    var fragmentShader = context.createShader(context.FRAGMENT_SHADER);
-    context.shaderSource(fragmentShader, document.querySelector("#fragment-shader").textContent);
-    context.compileShader(fragmentShader);
-    if (!context.getShaderParameter(fragmentShader, context.COMPILE_STATUS)) throw new Error(context.getShaderInfoLog(fragmentShader));
-
-    // Link and use the program.
-    var program = context.createProgram();
-    context.attachShader(program, vertexShader);
-    context.attachShader(program, fragmentShader);
-    context.linkProgram(program);
-    if (!context.getProgramParameter(program, context.LINK_STATUS)) throw new Error(context.getProgramInfoLog(program));
-    context.useProgram(program);
-
-    // Define the positions (as vec2) of the square that covers the canvas.
-    var positionBuffer = context.createBuffer();
-    context.bindBuffer(context.ARRAY_BUFFER, positionBuffer);
-    context.bufferData(context.ARRAY_BUFFER, new Float32Array([-1.0, -1.0, +1.0, -1.0, +1.0, +1.0, -1.0, +1.0]), context.STATIC_DRAW);
-
-    // Bind the position buffer to the position attribute.
-    var positionAttribute = context.getAttribLocation(program, "a_position");
-    context.enableVertexAttribArray(positionAttribute);
-    context.vertexAttribPointer(positionAttribute, 2, context.FLOAT, false, 0, 0);
-
-    // Extract the projection parameters.
-    var translateUniform = context.getUniformLocation(program, "u_translate"),
-        scaleUniform = context.getUniformLocation(program, "u_scale"),
-        rotateUniform = context.getUniformLocation(program, "u_rotate");
-
-    // Load the reference image.
-    var image = new Image();
-    image.src = "/img/milky-way.jpg";
-    image.onload = readySoon;
-    self.onresize = resize;
-
-    // Hack to ensure correct inference of window dimensions.
-    function readySoon() {
-      setTimeout(function () {
-        resize();
-        ready();
-      }, 10);
-    }
-
-    function resize() {
-      var width = Math.max(100, self.innerWidth),
-          height = Math.max(500, self.innerHeight);
-      canvas.setAttribute("width", width);
-      canvas.setAttribute("height", height);
-      context.uniform2f(translateUniform, width / 2, height / 2);
-      context.uniform1f(scaleUniform, 500);
-      context.viewport(0, 0, width, height);
-    }
-
-    function ready() {
-
-      // Create a texture and a mipmap for accurate minification.
-      var texture = context.createTexture();
-      context.bindTexture(context.TEXTURE_2D, texture);
-      context.texParameteri(context.TEXTURE_2D, context.TEXTURE_MAG_FILTER, context.LINEAR);
-      context.texParameteri(context.TEXTURE_2D, context.TEXTURE_MIN_FILTER, context.LINEAR_MIPMAP_LINEAR);
-      context.texImage2D(context.TEXTURE_2D, 0, context.RGBA, context.RGBA, context.UNSIGNED_BYTE, image);
-      context.generateMipmap(context.TEXTURE_2D);
-
-      // The current rotation and speed.
-      var rotate = [0, 0],
-          speed = [-.001, .0004];
-
-      redraw();
-
-      // Rotate and redraw!
-      function redraw() {
-        rotate[0] += speed[0], rotate[1] += speed[1];
-        context.uniform2fv(rotateUniform, rotate);
-        context.bindTexture(context.TEXTURE_2D, texture); // XXX Safari
-        context.drawArrays(context.TRIANGLE_FAN, 0, 4);
-        requestAnimationFrame(redraw);
-      }
-    }
-
-    // A polyfill for requestAnimationFrame.
-    if (!self.requestAnimationFrame) requestAnimationFrame = self.webkitRequestAnimationFrame || self.mozRequestAnimationFrame || self.msRequestAnimationFrame || self.oRequestAnimationFrame || function (f) {
-      setTimeout(f, 17);
-    };
-    //canvas end
-  }
-
-  function addItemsAnimation(point, numberOfItems, elementsName, effectName, topOffset) {
-    $(point).waypoint(function (dir) {
-      var self = this.element;
-
-      if (dir === 'down') {
-        var elemNumb = 0;
-        var addCl = setInterval(function () {
-          $(self).find(elementsName).eq(elemNumb).css('opacity', '1').addClass('animated ' + effectName);
-          ++elemNumb;
-
-          if (elemNumb == numberOfItems) {
-            clearInterval(addCl);
-          }
-        }, 100);
-      }
-    }, {
-      offset: topOffset
-    });
-  }
-
-  function addAnimation(point, elementName, effectName, topOffset) {
-    $(point).waypoint(function (dir) {
-
-      if (dir === 'down') {
-        $(elementName).css('opacity', '1');
-        $(elementName).addClass('animated ' + effectName);
-      }
-    }, {
-      offset: topOffset
-    });
-  }
-
-  //Запрет перетаскивать картинки
-  $("img, a").on("dragstart", function (event) {
-    event.preventDefault();
-  });
-})();*/
-
 
 })();
