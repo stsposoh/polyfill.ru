@@ -6,14 +6,18 @@
     left 0
     width 100%
     height 100%
-    padding-top 14%
     text-align center
     background-color bg_grey_opacity
 
     &__list
-        animation-delay .5s
-        animation-duration 1s
         normalize_list()
+        width 100%
+        text-align: center;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%)
+        font-size 0
 
         &-item
             a
@@ -26,6 +30,7 @@
                 text-transform uppercase
                 transition all 1s ease
                 text-decoration none
+
                 &:hover
                     color accent-color
                     text-decoration none
