@@ -16,10 +16,6 @@
     });
 
 
-    //header parralax
-    $('.header').parallax({imageSrc: '/img/n71.jpg'});
-
-
     //smooth scroll to link ankhor
     const smoothSpeed = .3;
 

@@ -67,9 +67,7 @@ gulp.task('js', function () {
 gulp.task('libs', function () {
     return gulp.src([
         //все js библиотеки подключать сюда
-        'app/assets/libs/jquery/dist/jquery.min.js',
-        'app/assets/libs/parallax.js/parallax.min.js',
-        'app/assets/libs/mixitup/dist/mixitup.min.js'
+        'app/libs/mixitup/dist/mixitup.min.js'
     ])
     .pipe(plumber({
         errorHandler: notify.onError(err => ({

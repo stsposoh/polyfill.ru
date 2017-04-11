@@ -8,7 +8,6 @@
     transform: translate(-50%, -50%);
     color white
     font-family 'RalewayBold',sans-serif
-    transition all 1s ease
 
     &__title
         width 100%
@@ -18,8 +17,6 @@
         line-height 37px
         border 5px solid white
         letter-spacing 7px
-        animation-delay 1s
-        animation-duration 3s
         display inline-block
         text-transform uppercase
 
@@ -31,11 +28,12 @@
                 font-size 50px
 
     &__desc
+        position absolute
+        left 0
+        width 100%
         color #d3d2d2
         letter-spacing 8px
         font-size 20px
-        animation-delay 1s
-        animation-duration 3s
 
         @media mq_tablet
             letter-spacing 14px
