@@ -2,6 +2,10 @@
   "name": "temp_gulp",
   "dependencies": {
     "normalize-css": "^6.0.0",
-    "mixitup": "^3.1.9"
+    "mixitup": "^3.1.9",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1"
   }
 }

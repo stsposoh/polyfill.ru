@@ -16,6 +16,12 @@
     });
 
 
+    //parallax in header
+    $(".header__paralax").JSoftParallax({
+        'speed':'0'
+    });
+
+
     //smooth scroll to link ankhor
     const smoothSpeed = .3;
 
@@ -130,6 +136,16 @@
         document.body.style.overflow = 'auto';
         imageZoomed.style.display = '';
     });
+
+
+    //Make the node not clickable
+    let notLinkElements = document.querySelectorAll('.not-link');
+
+    for (let i = 0; i < notLinkElements.length; i++) {
+        notLinkElements[i].addEventListener('click', function (e) {
+            e.preventDefault();
+        })
+    }
 
 
     //Sertificates

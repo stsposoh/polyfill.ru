@@ -46,6 +46,25 @@
                     <span class="hamburger__line"></span>
                 </div>
 
+                <div class="header__paralax">
+
+                    <div class="header__stars"></div>
+                    <div class="header__twinkling"></div>
+                    <div class="header__clouds"></div>
+
+                    <img src="/img/ilu_man.png" data-weight="4" data-direction="bottom" class="header__paralax-man"/>
+                    <img src="/img/ilu_03.png" data-weight="5" data-direction="bottom" class="header__paralax-bg1"/>
+                    <img src="/img/ilu_02.png" data-weight="20" data-direction="bottom" class="header__paralax-bg2"/>
+                    <img src="/img/ilu_01.png" data-weight="100" data-direction="bottom" class="header__paralax-bg3"/>
+
+                    <div class="logo" data-direction="top" data-weight="5">
+                        <div class="logo__decor fade-in-right"></div>
+                        <span class="logo__title animation fade-in-down">Посохов Станислав</span>
+                        <span class="logo__desc animation fade-in-up">web developer</span>
+                    </div>
+
+                </div>
+
                 <nav class="nav animation fade-in">
                     <ul class="nav__list">
                         <li class="nav__list-item"><a class="js-smooth-to" href="#aboutme">Обо мне</a></li>
@@ -57,18 +76,13 @@
                     </ul>
                 </nav>
 
-                <div class="logo">
-                    <span class="logo__title animation fade-in-down">Посохов Станислав</span>
-                    <span class="logo__desc animation fade-in-up">web developer</span>
-                </div>
-
                 <div class="arrow-down">
                     <a class="arrow-down__btn animation float js-smooth-to" href="#aboutme"></a>
                 </div>
             </header>
 
             <main>
-                <section id="aboutme" class="card card--grey">
+                <section id="aboutme" class="card card--dark">
                     <div class="card__content">
 
                         <div class="card__header">
@@ -84,20 +98,16 @@
                         <div class="card__text">
                             <h3>О веб разработке</h3>
 
-                            <p>Я встретил ее чуть более года назад…</p>
+                            <p>Я встретил ее два года назад…</p>
                             <p>Она была прекрасной, вся такая современная, со своими технологиями.</p>
                             <p>И я сразу влюбился. И понял, что хочу быть с ней всю жизнь.</p>
                             <p>Я знал, что я у нее не один, у нее таких как я сотни тысяч, но все равно, каждый день она
                                 заставляет мое сердце биться быстрее, лишает меня сна и ослепляет своей красотой.</p>
                             <p>* * *</p>
-                            <p>День рождения: 24 августа 1986 года</p>
-                            <p>Родился в Карелии, школу и университет закончил в Украине.</p>
-                            <p>В 2008 году переехал в Москву. C 2012 года проживаю в Сочи</p>
                             <p>Веб разработкой занимаюсь с 2015 года (<span class="js-experience-timer"><span></span>
                             <span></span><span></span></span>)</p>
                             <p>English level: Intermediate</p>
                             <p>Готов к командировакам/переезду</p>
-                            <p>* * *</p>
                             <!--<p>Сейчас очень популярны одностраничные сайты – landing page. Лендинги в моем исполнении, грузятся очень быстро за счет правильной оптимизации. И помогает мне в этом, мой любимый таск менеджер GULP. Который, к тому же, избавляет меня от большого объема рутинной работы, что в свою очередь экономит мое время и, соответственно, снижает себестоимость работы. Кроме этого, за счет правильной оптимизации, мои лендинги набирают максимальные оценки на <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">google page speed</a>.</p>-->
                         </div>
                     </div>
@@ -260,7 +270,7 @@
                     </div>
                 </section>
 
-                <section id="education" class="card card--black">
+                <section id="education" class="card  card--dark">
                     <div class="card__content">
 
                         <div class="card__header">
@@ -374,7 +384,7 @@
                                             <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/maps_me_big.png">Увеличить</a>
                                             <p>Новогодняя страничка для maps.me</p>
                                         </div>
-                                        <a class="slab__works work16" href="http://maps.me/" target="_blank">
+                                        <a class="slab__works work16 not-link" href="http://maps.me/" target="_blank">
                                             <span>maps.me</span>
                                         </a>
                                     </div>
@@ -386,7 +396,7 @@
                                                href="/img/portfolio/routes_maps_me_big.png">Увеличить</a>
                                             <p>Туристические маршруты для maps.me</p>
                                         </div>
-                                        <a class="slab__works work15" href="http://maps.me/" target="_blank">
+                                        <a class="slab__works work15 not-link" href="http://maps.me/" target="_blank">
                                             <span>maps.me</span>
                                         </a>
                                     </div>
@@ -419,7 +429,8 @@
                                             <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/stroydvor_big.png">Увеличить</a>
                                             <p>Строительный двор «Петровский»</p>
                                         </div>
-                                        <a class="slab__works work12" href="http://stroydvor.clientmagnet.ru/" target="_blank">
+                                        <a class="slab__works work12 not-link" href="http://stroydvor.clientmagnet.ru/"
+                                           target="_blank">
                                             <span>stroydvor.clientmagnet.ru</span>
                                         </a>
                                     </div>
@@ -430,7 +441,7 @@
                                             <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/iknagrevateli_big.png">Увеличить</a>
                                             <p></p>
                                         </div>
-                                        <a class="slab__works work11" href="http://iknagrevateli.ru/" target="_blank">
+                                        <a class="slab__works work11 not-link" href="http://iknagrevateli.ru/" target="_blank">
                                             <span>iknagrevateli.ru</span>
                                         </a>
                                     </div>
@@ -511,7 +522,7 @@
                                                 Увеличить</a>
                                             <p>Фабрика ротанговой мебели</p>
                                         </div>
-                                        <a class="slab__works work4" href="http://laarde.polyfill.ru" target="_blank">
+                                        <a class="slab__works work4  not-link" href="http://laarde.polyfill.ru" target="_blank">
                                             <span>laarde.polyfill.ru</span>
                                         </a>
                                     </div>
@@ -523,7 +534,7 @@
                                                 Увеличить</a>
                                             <p>Сайт-портфолио</p>
                                         </div>
-                                        <a class="slab__works work3" href="http://v-posokhov.ru/" target="_blank">
+                                        <a class="slab__works work3  not-link" href="http://v-posokhov.ru/" target="_blank">
                                             <span>v-posokhov.ru</span>
                                         </a>
                                     </div>
@@ -558,7 +569,7 @@
                     </div>
                 </section>
 
-                <section id="certificates" class="card card--black">
+                <section id="certificates" class="card  card--dark">
                     <div class="card__content card__content--wide">
 
                         <div class="card__header">
@@ -640,8 +651,8 @@
 
                         <div class="contacts">
                             <div class="contacts__left">
-                                <p>РФ. Краснодарский край, г. Сочи</p>
-                                <p>+7(938) 439-16-15</p>
+                                <p>Украина</p>
+                                <p>+38(099) 270-76-15</p>
                                 <p><a href="mailto:stsposoh@gmail.com">stsposoh@gmail.com</a></p>
                                 <p>Stas Posohov</p>
                             </div>

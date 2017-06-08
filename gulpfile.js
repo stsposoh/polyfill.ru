@@ -34,7 +34,7 @@ gulp.task('styl', function () {
       'include css': true
     }))
     .pipe(debug({title: 'stylus'}))
-    //.pipe(cssnano())  //если нужно сжать css
+    .pipe(cssnano())  //если нужно сжать css
     .pipe(rename({suffix: '.min', prefix : ''}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'));
@@ -59,7 +59,7 @@ gulp.task('js', function () {
     .pipe(babel({
       presets: ['es2015']
     }))
-    //.pipe(uglify())   //сжатие common.js
+    .pipe(uglify())   //сжатие common.js
     .pipe(gulp.dest('dist/js'));
 });
 
@@ -67,6 +67,8 @@ gulp.task('js', function () {
 gulp.task('libs', function () {
     return gulp.src([
         //все js библиотеки подключать сюда
+        'app/libs/jquery/dist/jquery.js',
+        'app/libs/JSoftParallax/JSoftParallax.js',
         'app/libs/mixitup/dist/mixitup.min.js'
     ])
     .pipe(plumber({

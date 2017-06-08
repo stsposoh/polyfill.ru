@@ -1,31 +1,43 @@
 .logo
     width 90%
-    max-width 780px
-    text-align: center;
+    max-width 455px
     position: absolute;
-    left: 50%;
+    z-index 4
+    left: 6%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
     color white
     font-family 'RalewayBold',sans-serif
 
+    @media mq_desktop
+        left: 11%;
+
+    &__decor
+        position absolute
+        top 11px
+        left 0
+        border 9px solid accent-color
+        width 25px
+        height 68px
+
+        @media mq_desktop
+            top 14px
+            width 28px
+            height 100px
+
     &__title
         width 100%
-        margin-bottom 8px
-        padding 4px 17px
+        padding: 4px 17px 4px 35px;
         font-size 30px
-        line-height 37px
-        border 5px solid white
+        line-height 43px
         letter-spacing 7px
         display inline-block
         text-transform uppercase
 
-        @media mq_tablet
-            padding 12px 35px
-
-            @media mq_desktop
-                padding 23px 35px
-                font-size 50px
+        @media mq_desktop
+            line-height 61px
+            padding 4px 42px
+            font-size 50px
 
     &__desc
         width 100%
@@ -34,9 +46,6 @@
         font-size 20px
         display inline-block
 
-        @media mq_tablet
-            letter-spacing 14px
-            font-size 22px
-
-            @media mq_desktop
-                font-size 27px
+        @media mq_desktop
+            font-size 27px
+            line-height: 27px;
