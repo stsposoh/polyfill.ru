@@ -1,41 +1,101 @@
 .nav
     display none
+    width 54px
     position fixed
     z-index 998
-    top 0
-    left 0
-    width 100%
-    height 100%
-    text-align center
+    height: 300px;
+    padding-top: 10px;
+    bottom 0
+    right 0
     background-color bg_grey_opacity
+
+    @media mq_desktop
+        width 80px
+        height: 510px;
 
     &__list
         normalize_list()
-        width 100%
-        text-align: center;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%)
         font-size 0
 
         &-item
-            a
+            padding: 5px 10px;
+            position relative
+
+            &:hover
+                .nav__list-item-title
+                    width: 140px;
+                    font-size: 13px;
+                    left: -140px;
+                    transition all .3s ease
+
+            &-link
+                width 30px
+                height 30px
                 display block
-                padding 20px 0
                 text-align center
+                border-radius 50%
                 font-size 12px
                 letter-spacing 4px
                 color white
                 text-transform uppercase
-                transition all 1s ease
                 text-decoration none
+                overflow hidden
+                box-shadow: 3px 3px 13px -2px #919191;
+                transition all .3s ease
+
+                @media mq_desktop
+                    width 60px
+                    height 60px
 
                 &:hover
-                    color accent-color
-                    text-decoration none
-                    background-color rgba(31, 27, 23, 0.73)
-                    transition all 1s ease
+
+                    .nav__list-item-image
+                        transform rotate(50deg)
+                        transition all .3s ease
+
+                &--active
+                    box-shadow: 3px 3px 13px -2px accent-color;
+
+                    .nav__list-item-image
+                        transform rotate(50deg)
+                        transition all .3s ease
+
+            &-title
+                position absolute
+                background: bg_grey_opacity;
+                width: 120px;
+                font-size: 10px;
+                left: -120px;
+                line-height: 23px;
+                height: 23px;
+                z-index: 5;
+                top: 10px;
+                text-transform: none;
+                transition all .3s ease
+
+                @media mq_desktop
+                    width: 0;
+                    font-size: 0;
+                    left: 0;
+                    line-height: 28px;
+                    height 28px
+                    top 24px
+
+            &-image
+                transition all .3s ease
 
     &--visible
         display block
+
+
+
+
+
+
+
+
+
+
+
+
+

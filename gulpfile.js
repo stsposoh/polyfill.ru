@@ -1,3 +1,6 @@
+//$ gulp - for developing
+//$ gulp production - for production
+
 'use strict';
 
 const gulp              = require('gulp');
@@ -16,6 +19,10 @@ const concat            = require('gulp-concat');
 const uglify            = require('gulp-uglify');
 const cache             = require('gulp-cache');
 const babel             = require('gulp-babel');
+const ftp               = require('vinyl-ftp');
+const gutil             = require('gulp-util' );
+const imagemin          = require('gulp-imagemin');
+const del               = require('del');
 
 
 
@@ -69,7 +76,8 @@ gulp.task('libs', function () {
         //все js библиотеки подключать сюда
         'app/libs/jquery/dist/jquery.js',
         'app/libs/JSoftParallax/JSoftParallax.js',
-        'app/libs/mixitup/dist/mixitup.min.js'
+        'app/libs/mixitup/dist/mixitup.min.js',
+        'app/libs/waypoints/lib/jquery.waypoints.min.js'
     ])
     .pipe(plumber({
         errorHandler: notify.onError(err => ({
@@ -103,7 +111,59 @@ gulp.task('browser-sync', function() {
 });
 
 
+gulp.task('removedist', function() {
+    return del('dist', {force: true});
+});
+
+
+gulp.task('removeImgDist', function() {
+    return del('dist/img', {force: true});
+});
+
+
+gulp.task('imagemin', function() {
+    return gulp.src('app/assets/img/**/*')
+        .pipe(cache(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.jpegtran({progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({plugins: [{removeViewBox: true}]})
+        ])))
+        .pipe(gulp.dest('dist/img'));
+});
+
+/*
+
+gulp.task('ftp', function() {
+    let conn = ftp.create({
+        host:      'ftp60.hostland.ru',
+        user:      'host1474862',
+        password:  'f4ceaa46',
+        parallel:  10,
+        log: gutil.log
+    });
+
+    var globs = 'dist/!**';
+
+    return gulp.src(globs, {since: gulp.lastRun('production')})
+        .pipe(newer('/polyfill.ru/htdocs/www'))
+        .pipe(conn.dest('/polyfill.ru/htdocs/www'));
+});
+*/
+
+/*
+
+gulp.task('production',
+    gulp.series(['imagemin','ftp'])
+);
+*/
+
+gulp.task('imagemin',
+    gulp.series(['removeImgDist','imagemin'])
+);
+
+
 gulp.task('default', 
-  gulp.series('build', 
-  gulp.parallel('watch', 'browser-sync'))
+  gulp.series(['removedist', 'build',
+  gulp.parallel('watch', 'browser-sync')])
 );

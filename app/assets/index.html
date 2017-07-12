@@ -19,7 +19,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
         <style>
-            body{overflow-y: hidden;} #root, .parallax-mirror {opacity: 0;} html{background-color: #2f2f2f;}
+            body{overflow-y: hidden;} #root {opacity: 0;} html{background-color: #2f2f2f;}
             .preloader{margin:0;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);transform:translate(-50%,-50%);position:absolute;top:50%;left:50%;text-align:center}.preloader__text{display:block;margin:0 auto;color:#fff}.preloader__dot-1,.preloader__dot-2,.preloader__dot-3,.preloader__dot-4,.preloader__dot-5,.preloader__dot-6{height:4px;width:4px;background-color:#e81d62;display:inline-block;margin:12px 2px;border-radius:100%;-webkit-animation:loader 4s infinite;-moz-animation:loader 4s infinite;-o-animation:loader 4s infinite;-ms-animation:loader 4s infinite;animation:loader 4s infinite;-webkit-animation-timing-function:cubic-bezier(0.03,0.615,0.995,0.415);-moz-animation-timing-function:cubic-bezier(0.03,0.615,0.995,0.415);-o-animation-timing-function:cubic-bezier(0.03,0.615,0.995,0.415);-ms-animation-timing-function:cubic-bezier(0.03,0.615,0.995,0.415);animation-timing-function:cubic-bezier(0.03,0.615,0.995,0.415);-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-o-animation-fill-mode:both;-ms-animation-fill-mode:both;animation-fill-mode:both}.preloader__dot-1{-webkit-animation-delay:1s;-moz-animation-delay:1s;-o-animation-delay:1s;-ms-animation-delay:1s;animation-delay:1s}.preloader__dot-2{-webkit-animation-delay:0.8s;-moz-animation-delay:0.8s;-o-animation-delay:0.8s;-ms-animation-delay:0.8s;animation-delay:0.8s}.preloader__dot-3{-webkit-animation-delay:0.6s;-moz-animation-delay:0.6s;-o-animation-delay:0.6s;-ms-animation-delay:0.6s;animation-delay:0.6s}.preloader__dot-4{-webkit-animation-delay:0.4s;-moz-animation-delay:0.4s;-o-animation-delay:0.4s;-ms-animation-delay:0.4s;animation-delay:0.4s}.preloader__dot-5{-webkit-animation-delay:0.2s;-moz-animation-delay:0.2s;-o-animation-delay:0.2s;-ms-animation-delay:0.2s;animation-delay:0.2s}.preloader__dot-6{-webkit-animation-delay:0s;-moz-animation-delay:0s;-o-animation-delay:0s;-ms-animation-delay:0s;animation-delay:0s}@-webkit-keyframes loader{0%{-webkit-transform:translateX(-30px);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}25%{opacity:1;-ms-filter:none;filter:none}50%{-webkit-transform:translateX(30px);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}100%{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}}@-moz-keyframes loader{0%{-moz-transform:translateX(-30px);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}25%{opacity:1;-ms-filter:none;filter:none}50%{-moz-transform:translateX(30px);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}100%{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}}@-keyframes loader{0%{-transform:translateX(-30px);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}25%{opacity:1;-ms-filter:none;filter:none}50%{-transform:translateX(30px);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}100%{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}}@-ms-keyframes loader{0%{-ms-transform:translateX(-30px);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}25%{opacity:1;-ms-filter:none;filter:none}50%{-ms-transform:translateX(30px);opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}100%{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0)}}
         </style>
     </head>
@@ -38,7 +38,7 @@
 
         <div id="root">
 
-            <header class="header">
+            <header class="header" id="header">
 
                 <div class="hamburger">
                     <span class="hamburger__line"></span>
@@ -46,43 +46,73 @@
                     <span class="hamburger__line"></span>
                 </div>
 
-                <div class="header__paralax">
+                <div id="header-bg" class="header__bg">
+                    <canvas id="header-canvas"></canvas>
 
-                    <div class="header__stars"></div>
-                    <div class="header__twinkling"></div>
-                    <div class="header__clouds"></div>
-
-                    <img src="/img/ilu_man.png" data-weight="4" data-direction="bottom" class="header__paralax-man"/>
-                    <img src="/img/ilu_03.png" data-weight="5" data-direction="bottom" class="header__paralax-bg1"/>
-                    <img src="/img/ilu_02.png" data-weight="20" data-direction="bottom" class="header__paralax-bg2"/>
-                    <img src="/img/ilu_01.png" data-weight="100" data-direction="bottom" class="header__paralax-bg3"/>
-
-                    <div class="logo" data-direction="top" data-weight="5">
+                    <div class="logo">
                         <div class="logo__decor fade-in-right"></div>
                         <span class="logo__title animation fade-in-down">Посохов Станислав</span>
                         <span class="logo__desc animation fade-in-up">web developer</span>
                     </div>
-
                 </div>
 
                 <nav class="nav animation fade-in">
                     <ul class="nav__list">
-                        <li class="nav__list-item"><a class="js-smooth-to" href="#aboutme">Обо мне</a></li>
-                        <li class="nav__list-item"><a class="js-smooth-to" href="#skills">Навыки</a></li>
-                        <li class="nav__list-item"><a class="js-smooth-to" href="#education">Образование</a></li>
-                        <li class="nav__list-item"><a class="js-smooth-to" href="#portfolio">Портфолио</a></li>
-                        <li class="nav__list-item"><a class="js-smooth-to" href="#certificates">Сертификаты</a></li>
-                        <li class="nav__list-item"><a class="js-smooth-to" href="#contacts">Контакты</a></li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item-link js-smooth-to" href="#header">
+                                <img class="nav__list-item-image" src="/img/pic-1-small.jpg" alt="">
+                                <span class="nav__list-item-title">Наверх</span>
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item-link js-smooth-to" href="#aboutme">
+                                <img class="nav__list-item-image" src="/img/pic-2-small.jpg" alt="">
+                                <span class="nav__list-item-title">Обо мне</span>
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item-link js-smooth-to" href="#skills">
+                                <img class="nav__list-item-image" src="/img/pic-3-small.jpg" alt="">
+                                <span class="nav__list-item-title">Навыки</span>
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item-link js-smooth-to" href="#education">
+                                <img class="nav__list-item-image" src="/img/pic-4-small.jpg" alt="">
+                                <span class="nav__list-item-title">Образование</span>
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item-link js-smooth-to" href="#portfolio">
+                                <img class="nav__list-item-image" src="/img/pic-5-small.jpg" alt="">
+                                <span class="nav__list-item-title">Портфолио</span>
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item-link js-smooth-to" href="#certificates">
+                                <img class="nav__list-item-image" src="/img/pic-6-small.jpg" alt="">
+                                <span class="nav__list-item-title">Сертификаты</span>
+                            </a>
+                        </li>
+                        <li class="nav__list-item">
+                            <a class="nav__list-item-link js-smooth-to" href="#contacts">
+                                <img class="nav__list-item-image" src="/img/pic-7-small.jpg" alt="">
+                                <span class="nav__list-item-title">Контакты</span>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
 
                 <div class="arrow-down">
-                    <a class="arrow-down__btn animation float js-smooth-to" href="#aboutme"></a>
+                    <a class="arrow-down__btn animation float js-smooth-to" href="#aboutme-scroll"></a>
                 </div>
             </header>
 
             <main>
                 <section id="aboutme" class="card card--dark">
+
+                    <div id="aboutme-scroll"></div>
+
                     <div class="card__content">
 
                         <div class="card__header">
@@ -96,18 +126,25 @@
                         </a>
 
                         <div class="card__text">
-                            <h3>О веб разработке</h3>
+                            <!--<h3>О веб разработке</h3>
 
                             <p>Я встретил ее два года назад…</p>
                             <p>Она была прекрасной, вся такая современная, со своими технологиями.</p>
                             <p>И я сразу влюбился. И понял, что хочу быть с ней всю жизнь.</p>
                             <p>Я знал, что я у нее не один, у нее таких как я сотни тысяч, но все равно, каждый день она
                                 заставляет мое сердце биться быстрее, лишает меня сна и ослепляет своей красотой.</p>
-                            <p>* * *</p>
+                            <p>* * *</p>-->
                             <p>Веб разработкой занимаюсь с 2015 года (<span class="js-experience-timer"><span></span>
                             <span></span><span></span></span>)</p>
-                            <p>English level: Intermediate</p>
+                            <p>English level: Pre-intermediate</p>
                             <p>Готов к командировакам/переезду</p>
+                            <p>* * *</p>
+                            <p>Специализируюсь на верстке лендингов и разработке сайтов на wordpress</p>
+                            <p>* * *</p>
+                            <p>Работал в команде над созданием социальной сети <a href="http://www.mam4.ru" target="_blank">http
+                                ://www.mam4.ru</a> </p>
+                            <p>Принимал участие в командной разработке сайта <a href="https://mundep.gudkov.ru/"
+                                                                           target="_blank">https://mundep.gudkov.ru</a> </p>
                             <!--<p>Сейчас очень популярны одностраничные сайты – landing page. Лендинги в моем исполнении, грузятся очень быстро за счет правильной оптимизации. И помогает мне в этом, мой любимый таск менеджер GULP. Который, к тому же, избавляет меня от большого объема рутинной работы, что в свою очередь экономит мое время и, соответственно, снижает себестоимость работы. Кроме этого, за счет правильной оптимизации, мои лендинги набирают максимальные оценки на <a href="https://developers.google.com/speed/pagespeed/insights/" target="_blank">google page speed</a>.</p>-->
                         </div>
                     </div>
@@ -275,7 +312,7 @@
 
                         <div class="card__header">
                             <span class="card__header-title">Образование</span>
-                            <span class="card__header-desc">Учиться! Учиться! Учиться!</span>
+                            <!--<span class="card__header-desc">Учиться! Учиться! Учиться!</span>-->
                             <hr class="card__header-divider">
                         </div>
 
@@ -381,6 +418,18 @@
                                 <li class="portfolio__item">
                                     <div class="slab">
                                         <div class="slab__back">
+                                            <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/podari_big.png">
+                                                Увеличить</a>
+                                            <p>Сайт благотворительной организации "Спаси жизнь"</p>
+                                        </div>
+                                        <a class="slab__works work2" href="http://podari.clientmagnet.ru/" target="_blank">
+                                            <span>podari.clientmagnet.ru</span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="portfolio__item">
+                                    <div class="slab">
+                                        <div class="slab__back">
                                             <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/maps_me_big.png">Увеличить</a>
                                             <p>Новогодняя страничка для maps.me</p>
                                         </div>
@@ -429,9 +478,9 @@
                                             <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/stroydvor_big.png">Увеличить</a>
                                             <p>Строительный двор «Петровский»</p>
                                         </div>
-                                        <a class="slab__works work12 not-link" href="http://stroydvor.clientmagnet.ru/"
+                                        <a class="slab__works work12" href="http://xn--b1aaefqbfg4adbkhfcgmfj.xn--p1ai/"
                                            target="_blank">
-                                            <span>stroydvor.clientmagnet.ru</span>
+                                            <span>стройдворпетровский.pф</span>
                                         </a>
                                     </div>
                                 </li>
@@ -518,48 +567,36 @@
                                 <li class="portfolio__item">
                                     <div class="slab">
                                         <div class="slab__back">
-                                            <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/laarde_big.png">
+                                            <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/gudkov_big.png">
                                                 Увеличить</a>
-                                            <p>Фабрика ротанговой мебели</p>
+                                            <p>Принимал участие в командной работе над сайтом</p>
                                         </div>
-                                        <a class="slab__works work4  not-link" href="http://laarde.polyfill.ru" target="_blank">
-                                            <span>laarde.polyfill.ru</span>
+                                        <a class="slab__works work4" href="https://mundep.gudkov.ru/" target="_blank">
+                                            <span>mundep.gudkov.ru</span>
                                         </a>
                                     </div>
                                 </li>
                                 <li class="portfolio__item">
                                     <div class="slab">
                                         <div class="slab__back">
-                                            <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/posokhov_big.png">
+                                            <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/mam4_big.png">
                                                 Увеличить</a>
-                                            <p>Сайт-портфолио</p>
+                                            <p>Работал в команде над созданием социальной сети</p>
                                         </div>
-                                        <a class="slab__works work3  not-link" href="http://v-posokhov.ru/" target="_blank">
-                                            <span>v-posokhov.ru</span>
+                                        <a class="slab__works work3" href="http://www.mam4.ru" target="_blank">
+                                            <span>mam4.ru</span>
                                         </a>
                                     </div>
                                 </li>
                                 <li class="portfolio__item">
                                     <div class="slab">
                                         <div class="slab__back">
-                                            <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/hrustal2_big.png">
+                                            <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/asvland_big.png">
                                                 Увеличить</a>
-                                            <p>Отель "Горный хрусталь". Вариант 2</p>
+                                            <p></p>
                                         </div>
-                                        <a class="slab__works work2" href="http://hrustal.polyfill.ru/" target="_blank">
-                                            <span>hrustal.polyfill.ru</span>
-                                        </a>
-                                    </div>
-                                </li>
-                                <li class="portfolio__item">
-                                    <div class="slab">
-                                        <div class="slab__back">
-                                            <a class="slab__back-zoom js-image-zoom" href="/img/portfolio/hrustal_big.png">
-                                                Увеличить</a>
-                                            <p>Отель "Горный хрусталь"</p>
-                                        </div>
-                                        <a class="slab__works work1" href="http://gor-hrustal.ru" target="_blank">
-                                            <span>gor-hrustal.ru</span>
+                                        <a class="slab__works work1" href="http://asvland.ru/" target="_blank">
+                                            <span>asvland.ru</span>
                                         </a>
                                     </div>
                                 </li>
@@ -652,9 +689,10 @@
                         <div class="contacts">
                             <div class="contacts__left">
                                 <p>Украина</p>
-                                <p>+38(099) 270-76-15</p>
+                                <p><a href="tel:+38(099) 270-76-15">+38(099) 270-76-15</a></p>
                                 <p><a href="mailto:stsposoh@gmail.com">stsposoh@gmail.com</a></p>
                                 <p>Stas Posohov</p>
+                                <p>@posohov</p>
                             </div>
                             <div class="contacts__right">
                                 <form action="https://formspree.io/stsposoh@gmail.com" method="post" target="_blank">
@@ -673,14 +711,78 @@
 
         <footer class="footer">
             <div class="footer__on-top" title="На верх"></div>
-            <a href="https://vk.com/id13481199" target="_blank">
-                <img class="footer__social" src="/img/VK.svg" alt="" title="vk.com">
+            <a class="footer__social" href="https://vk.com/id13481199" target="_blank" title="vk">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="415px" height="414.996px" viewBox="0 0 415 414.996" enable-background="new 0 0 415 414.996" xml:space="preserve">
+                <path fill="#010101" d="M316.801,307.104c-0.558,0-1.102,0-1.66,0c-17.838-2.978-29.993-15.776-40.373-27.618
+                    c-5.84-6.699-14.832-21.846-25.54-20.1c-15.205,2.49-7.647,28.877-14.003,40.188c-5.125,9.133-26.957,7.485-42.013,5.854
+                    c-47.521-5.124-71.805-30.895-93.093-58.598c-22.758-29.607-40.474-60.588-56.852-94.604c-5.305-11.01-12.355-23.192-12.355-36.837
+                    c7.703-6.372,20.272-4.182,32.957-4.182c10.753,0,27.547-2.405,35.419,1.676c4.682,2.405,9.406,15.247,13.187,23.437
+                    c8.676,18.798,16.656,32.327,27.188,47.717c4.561,6.672,11.567,19.255,19.771,17.581c7.967-1.617,8.718-21.561,9.062-34.317
+                    c0.399-14.487-0.016-32.498-4.116-40.187c-3.873-7.258-10.959-7.402-18.126-11.726c5.964-12.183,22.312-13.4,42.021-13.4
+                    c16.556,0,39.677-1.861,46.133,9.22c6.573,11.282,2.063,31.626,1.647,46.873c-0.457,17.137-3.378,34.833,8.248,42.706
+                    c8.934-0.986,13.743-9.835,18.939-16.75c11.367-15.133,18.396-28.232,27.187-47.717c3.608-8.004,7.474-21.775,14.003-24.281
+                    c9.95-3.823,25.812-0.831,40.373-0.831c11.939,0,33.242-3.35,37.079,5.026c3.181,6.944-6.184,24.482-9.061,29.292
+                    c-11.039,18.384-21.863,30.094-33.773,46.044c-4.769,6.385-14.603,16.593-14.017,26.801c0.444,7.744,8.104,13.687,14.017,19.257
+                    c12.785,12.067,21.76,20.859,32.126,34.316c3.895,5.07,12.341,16.048,11.525,22.607C380.195,315.007,332.778,302.18,316.801,307.104
+                    z"/>
+                </svg>
             </a>
-            <a href="https://github.com/stsposoh" target="_blank">
-                <img class="footer__social" src="/img/GitHub.svg" alt="" title="github.com">
+            <a class="footer__social" href="https://github.com/stsposoh" target="_blank" title="github">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="415px" height="414.996px" viewBox="0 0 415 414.996" enable-background="new 0 0 415 414.996" xml:space="preserve">
+                <path d="M331.312,86.24c-33.747-33.745-74.246-50.62-122.165-50.62c-47.922,0-88.421,16.875-122.17,50.62
+                    c-33.748,33.749-50.622,74.247-50.622,122.172c0,47.921,16.874,88.419,50.622,122.168c33.749,33.744,74.248,50.621,122.17,50.621
+                    c47.919,0,88.418-16.877,122.165-50.621c33.746-33.749,50.624-74.247,50.624-122.168C381.937,160.487,365.059,119.989,331.312,86.24
+                    z M265.842,342.053c-4.749,1.965-8.775,3.377-13.5,4.727v-25.65c0-13.499-4.725-23.625-14.171-30.375
+                    c37.119-2.7,77.618-17.55,77.618-81.67c0-17.549-5.399-32.398-16.874-44.547c4.725-13.5,4.05-28.35-2.024-43.872l-4.05-0.677
+                    c-5.369-0.893-22.275,4.727-41.174,17.549c-13.496-4.05-27.674-6.073-41.845-6.073c-14.174,0-28.349,2.023-41.174,6.073
+                    c-33.072-20.922-45.222-17.549-45.897-16.872c-6.074,15.522-6.749,30.372-2.024,43.872c-11.476,12.149-16.874,26.999-16.874,44.547
+                    c0,64.12,40.497,78.97,77.621,81.67c-8.775,6.076-13.5,16.199-13.5,30.375v26.323c-5.399-1.35-10.775-3.435-15.523-5.399
+                    c-34.402-14.234-62.441-42.662-76.946-76.947c-15.194-35.912-15.194-77.479,0-113.391c14.505-34.285,42.66-62.441,76.946-76.947
+                    c35.914-15.193,77.478-15.193,113.392,0c34.286,14.506,62.441,42.662,76.946,76.947c15.193,35.912,15.193,77.479,0,113.391
+                    C328.283,299.391,300.24,327.818,265.842,342.053z"/>
+                </svg>
             </a>
-            <a href="https://ru.linkedin.com/in/sposokhov" target="_blank">
-                <img class="footer__social" src="/img/Linkedin.svg" alt="" title="linkedin.com">
+            <a class="footer__social" href="https://ru.linkedin.com/in/sposokhov" target="_blank" title="linkedin">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="415px" height="414.996px" viewBox="0 0 415 414.996" enable-background="new 0 0 415 414.996" xml:space="preserve">
+                <g>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M107.855,132.377c19.812,0,32.15-13.141,32.15-29.546
+                        c-0.369-16.771-12.338-29.54-31.771-29.54c-19.441,0-32.15,12.769-32.15,29.54c0,16.405,12.334,29.546,31.402,29.546H107.855
+                        L107.855,132.377z M136.27,326.683V155.711H79.443v170.972H136.27z"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M167.715,326.683h56.826v-95.479c0-5.108,0.369-10.217,1.871-13.863
+                        c4.109-10.213,13.457-20.788,29.156-20.788c20.568,0,28.787,15.683,28.787,38.664v91.466h56.826V228.65
+                        c0-52.514-28.033-76.952-65.426-76.952c-30.658,0-44.117,17.139-51.59,28.81h0.375v-24.797h-56.826
+                        C168.461,171.75,167.715,326.683,167.715,326.683L167.715,326.683z"/>
+                </g>
+                </svg>
+            </a>
+            <a class="footer__social" href="https://www.facebook.com/posohovstas" target="_blank" title="facebook">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="415px" height="415px" viewBox="0 0 415 415" enable-background="new 0 0 415 415" xml:space="preserve">
+                <path d="M149.472,164.49h26.12v-11.85v-11.608v-1.936c0-11.174,0.29-28.441,8.415-39.131c8.562-11.32,20.316-19.009,40.534-19.009
+                    c32.939,0,46.823,4.69,46.823,4.69l-6.53,38.696c0,0-10.882-3.145-21.041-3.145c-10.157,0-19.252,3.628-19.252,13.786v4.112v13.544
+                    v11.85h41.646l-2.902,37.776h-38.744v131.276h-48.949V202.267h-26.12V164.49z"/>
+                </svg>
+                </g>
+                </svg>
+            </a>
+            <a class="footer__social" href="https://moikrug.ru/polyfill" target="_blank" title="moikrug">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="415px" height="414.996px" viewBox="0 0 415 414.996" enable-background="new 0 0 415 414.996" xml:space="preserve">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M336.49,196.938L272.754,88.042c-7.671-13.286-5.412-12.829-19.658-12.927H107.755
+                    c-18.13,0-32.964,14.834-32.964,32.964v198.837c0,18.13,14.835,32.964,32.964,32.964h145.199c8.864,0,10.576,0.14,15.11-8.037
+                    l68.742-114.57C340.973,210.396,341.811,204.057,336.49,196.938z M237.697,129.158c17.564,0,31.891,14.325,31.891,31.89
+                    s-14.326,31.89-31.891,31.89c-17.563,0-31.889-14.325-31.889-31.89S220.134,129.158,237.697,129.158z M174.164,114.277
+                    c17.564,0,31.89,14.325,31.89,31.89c0,17.563-14.325,31.89-31.89,31.89s-31.89-14.326-31.89-31.89
+                    C142.274,128.603,156.6,114.277,174.164,114.277z M97.616,193.751c0-17.564,14.325-31.89,31.89-31.89s31.89,14.325,31.89,31.89
+                    s-14.325,31.89-31.89,31.89S97.616,211.315,97.616,193.751z M148.387,288.104c-17.564,0-31.89-14.325-31.89-31.89
+                    s14.325-31.89,31.89-31.89s31.89,14.325,31.89,31.89S165.951,288.104,148.387,288.104z M211.921,302.986
+                    c-17.564,0-31.89-14.326-31.89-31.89c0-17.564,14.325-31.891,31.89-31.891s31.89,14.326,31.89,31.891
+                    C243.811,288.66,229.485,302.986,211.921,302.986z M256.58,255.403c-17.564,0-31.89-14.325-31.89-31.89
+                    c0-17.563,14.325-31.89,31.89-31.89s31.891,14.326,31.891,31.89C288.471,241.078,274.145,255.403,256.58,255.403z"/>
+                </svg>
             </a>
 
             <p>&copy; <a href="http://polyfill.ru">Posokhov Stanislav</a></p>

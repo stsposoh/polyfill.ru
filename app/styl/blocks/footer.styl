@@ -21,9 +21,28 @@
         font-size .9rem
 
     a
-        color inherit
+        display inline-block
+        color #6d6d6d
         text-decoration none
+        transition color .3s ease
+
+        svg
+            width 30px
+            height 30px
+
+            path
+                fill #6d6d6d
+                transition fill .3s ease
+
+        &:hover
+            path
+                fill white
+                transition fill .3s ease
 
         @media mq_desktop
             &:hover
                 color white
+                transition color .3s ease
+
+    &__social
+        margin 0 10px
