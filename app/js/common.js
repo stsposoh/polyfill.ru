@@ -124,9 +124,6 @@
         smoothLinks[i].addEventListener('click', function(e) {
             e.preventDefault();
 
-            //hamburger.classList.remove('hamburger--is-active');
-            //nav.classList.remove('nav--visible');
-
             let w = window.pageYOffset;
             let hash = this.href.replace(/[^#]*(.*)/, '$1');
             let t = document.querySelector(hash).getBoundingClientRect().top;
@@ -145,7 +142,7 @@
                 if (r != w + t) {
                     requestAnimationFrame(step)
                 } else {
-                    location.hash = hash
+                    location.hash = hash;
                 }
             }
         }, false);

@@ -1,82 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/assets/index.html" line="817" />
+    <bookmark url="file://$PROJECT_DIR$/app/assets/index.html" line="810" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88178f71-6ae1-4d6f-a9f2-bf9ddd4ccc9e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/GitHub.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/Linkedin.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/VK.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/clouds.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/android-chrome-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/android-chrome-192x192.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/android-chrome-36x36.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/android-chrome-48x48.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/android-chrome-72x72.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/android-chrome-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon-120x120.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon-152x152.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon-180x180.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon-57x57.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon-60x60.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon-76x76.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon-precomposed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/apple-touch-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/browserconfig.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/favicon-16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/favicon-194x194.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/favicon-32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/favicon-96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/manifest.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/mstile-144x144.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/mstile-150x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/mstile-310x150.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/mstile-310x310.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/mstile-70x70.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/favicon/safari-pinned-tab.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/ilu_01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/ilu_02.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/ilu_03.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/ilu_man.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/n71.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/stars.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/twinkling.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/1.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/10.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/10.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/11.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/11.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/12.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/12.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/13.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/13.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/14.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/14.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/15.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/15.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/3.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/4.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/5.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/5.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/6.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/7.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/8.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/8.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/img/cert/small/9.jpg" afterPath="$PROJECT_DIR$/app/assets/img/cert/small/9.jpg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/asvland_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/asvland_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/clientmagnet_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/clientmagnet_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/hrustal2_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/hrustal2_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/hrustal_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/hrustal_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/kabinetdesign_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/kabinetdesign_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/laarde_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/laarde_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/narkologplus_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/narkologplus_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/posokhov_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/posokhov_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/test_big.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/img/portfolio/test_small.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/index.html" afterPath="$PROJECT_DIR$/app/assets/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.js" afterPath="$PROJECT_DIR$/app/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/normalize-css/.bower.json" afterPath="$PROJECT_DIR$/app/libs/normalize-css/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/normalize-css/.editorconfig" afterPath="$PROJECT_DIR$/app/libs/normalize-css/.editorconfig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/normalize-css/.gitattributes" afterPath="$PROJECT_DIR$/app/libs/normalize-css/.gitattributes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/normalize-css/.gitignore" afterPath="$PROJECT_DIR$/app/libs/normalize-css/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/normalize-css/.travis.yml" afterPath="$PROJECT_DIR$/app/libs/normalize-css/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/normalize-css/LICENSE.md" afterPath="$PROJECT_DIR$/app/libs/normalize-css/LICENSE.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/normalize-css/bower.json" afterPath="$PROJECT_DIR$/app/libs/normalize-css/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/normalize-css/normalize.css" afterPath="$PROJECT_DIR$/app/libs/normalize-css/normalize.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styl/blocks/card.styl" afterPath="$PROJECT_DIR$/app/styl/blocks/card.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styl/blocks/contacts.styl" afterPath="$PROJECT_DIR$/app/styl/blocks/contacts.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styl/blocks/footer.styl" afterPath="$PROJECT_DIR$/app/styl/blocks/footer.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styl/blocks/header.styl" afterPath="$PROJECT_DIR$/app/styl/blocks/header.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styl/blocks/nav.styl" afterPath="$PROJECT_DIR$/app/styl/blocks/nav.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/styl/blocks/portfolio.styl" afterPath="$PROJECT_DIR$/app/styl/blocks/portfolio.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,28 +35,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2574">
-              <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+            <state relative-caret-position="3124">
+              <caret line="142" column="47" lean-forward="false" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="598" column="50" lean-forward="false" selection-start-line="598" selection-start-column="50" selection-end-line="598" selection-end-column="50" />
-              <folding>
-                <element signature="e#29709#29714#0" expanded="true" />
-                <element signature="e#59098#59104#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -141,31 +77,24 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="438" column="67" lean-forward="false" selection-start-line="438" selection-start-column="67" selection-end-line="438" selection-end-column="67" />
+              <folding>
+                <element signature="e#29697#29702#0" expanded="true" />
+                <element signature="e#59258#59264#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="portfolio.styl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/styl/blocks/portfolio.styl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="120" column="100" lean-forward="false" selection-start-line="120" selection-start-column="100" selection-end-line="120" selection-end-column="100" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="card.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styl/blocks/card.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1364">
-              <caret line="62" column="37" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="vars.styl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/styl/base/vars.styl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="2904">
+              <caret line="132" column="101" lean-forward="false" selection-start-line="132" selection-start-column="101" selection-end-line="132" selection-end-column="101" />
               <folding />
             </state>
           </provider>
@@ -228,13 +157,13 @@
         <option value="$PROJECT_DIR$/app/styl/base/vars.styl" />
         <option value="$PROJECT_DIR$/app/styl/base/defaults.styl" />
         <option value="$PROJECT_DIR$/app/styl/blocks/header.styl" />
-        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/styl/blocks/nav.styl" />
         <option value="$PROJECT_DIR$/app/styl/blocks/card.styl" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/styl/blocks/footer.styl" />
         <option value="$PROJECT_DIR$/app/styl/blocks/contacts.styl" />
+        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/styl/blocks/portfolio.styl" />
         <option value="$PROJECT_DIR$/app/assets/index.html" />
       </list>
@@ -261,9 +190,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-7" />
+    <option name="y" value="8" />
     <option name="width" value="1932" />
-    <option name="height" value="1050" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -283,158 +213,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dist" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blocks" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="styl" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="polyfill.ru.git" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="polyfill.ru.git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polyfill.ru.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polyfill.ru.git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polyfill.ru.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polyfill.ru.git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polyfill.ru.git" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dispatcher" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mam4-frontend" />
     <property name="list.type.of.created.stylesheet" value="Stylus" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
     <property name="settings.editor.splitter.proportion" value="0.2304038" />
@@ -459,6 +267,14 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
       <PhpTestRunnerSettings />
       <method />
@@ -495,15 +311,6 @@
     </configuration>
     <configuration default="true" type="PhpSpecConfigurationType" factoryName="PHPSpec">
       <PhpTestRunnerSettings />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -556,19 +363,24 @@
       <workItem from="1499590244124" duration="5265000" />
       <workItem from="1499666000592" duration="35000" />
       <workItem from="1499858129512" duration="9779000" />
-      <workItem from="1499879812719" duration="263000" />
+      <workItem from="1499879812719" duration="932000" />
+      <workItem from="1499932066293" duration="1236000" />
+      <workItem from="1499933505892" duration="880000" />
+      <workItem from="1499965031086" duration="1088000" />
+      <workItem from="1500029598306" duration="28000" />
+      <workItem from="1509039658039" duration="4440000" />
+      <workItem from="1509621733863" duration="48000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181236000" />
+    <option name="totallyTimeSpent" value="189625000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="1932" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="8" width="1932" height="1049" extended-state="0" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2268319" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24412394" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -576,7 +388,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20677966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20655738" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -610,7 +422,7 @@
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -676,8 +488,8 @@
         <state relative-caret-position="5390">
           <caret line="245" column="102" lean-forward="false" selection-start-line="245" selection-start-column="102" selection-end-line="245" selection-end-column="102" />
           <folding>
-            <element signature="e#29709#29714#0" expanded="true" />
-            <element signature="e#59098#59104#0" expanded="true" />
+            <element signature="e#29697#29702#0" expanded="true" />
+            <element signature="e#59258#59264#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -717,8 +529,8 @@
         <state relative-caret-position="792">
           <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
           <folding>
-            <element signature="e#29709#29714#0" expanded="true" />
-            <element signature="e#59098#59104#0" expanded="true" />
+            <element signature="e#29697#29702#0" expanded="true" />
+            <element signature="e#59258#59264#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -854,14 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styl/blocks/header.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -905,14 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/styl/blocks/card.styl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1364">
-          <caret line="62" column="37" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/styl/blocks/footer.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -929,29 +725,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3124">
+          <caret line="142" column="47" lean-forward="false" selection-start-line="142" selection-start-column="47" selection-end-line="142" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/styl/base/vars.styl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/styl/blocks/card.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="62" column="37" lean-forward="false" selection-start-line="62" selection-start-column="37" selection-end-line="62" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/styl/blocks/portfolio.styl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="120" column="100" lean-forward="false" selection-start-line="120" selection-start-column="100" selection-end-line="120" selection-end-column="100" />
+        <state relative-caret-position="2904">
+          <caret line="132" column="101" lean-forward="false" selection-start-line="132" selection-start-column="101" selection-end-line="132" selection-end-column="101" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="598" column="50" lean-forward="false" selection-start-line="598" selection-start-column="50" selection-end-line="598" selection-end-column="50" />
+        <state relative-caret-position="647">
+          <caret line="438" column="67" lean-forward="false" selection-start-line="438" selection-start-column="67" selection-end-line="438" selection-end-column="67" />
           <folding>
-            <element signature="e#29709#29714#0" expanded="true" />
-            <element signature="e#59098#59104#0" expanded="true" />
+            <element signature="e#29697#29702#0" expanded="true" />
+            <element signature="e#59258#59264#0" expanded="true" />
           </folding>
         </state>
       </provider>
